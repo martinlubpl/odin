@@ -6,7 +6,7 @@ body {
 
 .header {
   height: 72px;
-  background: darkmagenta;
+  background: rgb(141, 75, 141);
   color: white;
 }
 
@@ -23,6 +23,72 @@ body {
 
 .card {
   border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
+}
+
+/* my solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  font-size: 24px;
+  padding: 16px;
+
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  /* padding: 16px; */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: flex-start; */
+  align-content: flex-start;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.card {
+  width: 300px;
+  padding: 16px;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  /* text-align: center; */
+  display: flex;
+  padding-left: 16px;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 8px;
 }
